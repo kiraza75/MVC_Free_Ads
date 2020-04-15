@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', 'IndexController@showIndex');
+
+Route::get("/inscription", function() {
+    return view("inscription");
+});
+
+Route::post("/inscription", function() {
+   return "good work";
+});
+
